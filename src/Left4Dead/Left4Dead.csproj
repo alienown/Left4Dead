@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{088E4B1C-DFE3-4F5B-9162-C6C2900CCA37}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Left4Dead</RootNamespace>
+    <AssemblyName>Left4Dead</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tracker\PlayerStatusTracker.cs" />
+    <Compile Include="Tracker\StunTracker.cs" />
+    <Compile Include="Tracker\JumpTracker.cs" />
+    <Compile Include="Tracker\PushTracker.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Tracker\DropTracker.cs" />
+    <Compile Include="Difficulty\EasyDifficulty.cs" />
+    <Compile Include="Difficulty\MediumDifficulty.cs" />
+    <Compile Include="Difficulty\HardDifficulty.cs" />
+    <Compile Include="Difficulty\IDifficulty.cs" />
+    <Compile Include="Drop\AK47Drop.cs" />
+    <Compile Include="Drop\AmmoPack.cs" />
+    <Compile Include="Drop\HealthPack.cs" />
+    <Compile Include="Drop\HealthBonus.cs" />
+    <Compile Include="Drop\AmmoBonus.cs" />
+    <Compile Include="Drop\SniperRifleDrop.cs" />
+    <Compile Include="Drop\Bonus.cs" />
+    <Compile Include="Drop\Drop.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="InterfaceBuilder\DefaultInterfaceBuilder.cs" />
+    <Compile Include="InterfaceBuilder\Product.cs" />
+    <Compile Include="InterfaceBuilder\FrameCharacter.cs" />
+    <Compile Include="InterfaceBuilder\InterfaceDirector.cs" />
+    <Compile Include="InterfaceBuilder\MathemathicsInterfaceBuilder.cs" />
+    <Compile Include="InterfaceBuilder\RainbowInterfaceBuilder.cs" />
+    <Compile Include="InterfaceBuilder\IInterfaceBuilder.cs" />
+    <Compile Include="Mechanics.cs" />
+    <Compile Include="Menus.cs" />
+    <Compile Include="Model\AK47Model.cs" />
+    <Compile Include="Model\HealthPackModel.cs" />
+    <Compile Include="Model\AmmoPackModel.cs" />
+    <Compile Include="Model\HunterZombieModel.cs" />
+    <Compile Include="Model\SniperRifleModel.cs" />
+    <Compile Include="Model\TankZombieModel.cs" />
+    <Compile Include="Model\NormalZombieModel.cs" />
+    <Compile Include="Model\SniperRifleBulletModel.cs" />
+    <Compile Include="Model\AK47BulletModel.cs" />
+    <Compile Include="Model\PistolBulletModel.cs" />
+    <Compile Include="Model\PlayerModel.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Movement\Position.cs" />
+    <Compile Include="Movement\Shift.cs" />
+    <Compile Include="Movement\Collision.cs" />
+    <Compile Include="Movement\Direction.cs" />
+    <Compile Include="Pause\PauseSubject.cs" />
+    <Compile Include="Pause\Pause.cs" />
+    <Compile Include="Pause\PauseObserver.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scoreboard\ScoreAggregate.cs" />
+    <Compile Include="Scoreboard\ScoreboardIterator.cs" />
+    <Compile Include="Scoreboard\Score.cs" />
+    <Compile Include="Scoreboard\IAggregate.cs" />
+    <Compile Include="Scoreboard\IPageIterator.cs" />
+    <Compile Include="Weapon\Ak47.cs" />
+    <Compile Include="Weapon\SniperRifle.cs" />
+    <Compile Include="Weapon\Pistol.cs" />
+    <Compile Include="Weapon\Weapon.cs" />
+    <Compile Include="ZombieMaker.cs" />
+    <Compile Include="ZombieState\AngryState.cs" />
+    <Compile Include="ZombieState\NormalState.cs" />
+    <Compile Include="ZombieState\EnragedState.cs" />
+    <Compile Include="ZombieState\IZombieState.cs" />
+    <Compile Include="Zombie\Tank.cs" />
+    <Compile Include="Zombie\Normal.cs" />
+    <Compile Include="Zombie\Hunter.cs" />
+    <Compile Include="Zombie\Zombie.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

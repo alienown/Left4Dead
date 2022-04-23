@@ -1,7 +1,0 @@
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\bin\Release\Left4Dead.exe.config
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\bin\Release\Left4Dead.exe
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\bin\Release\Left4Dead.pdb
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\obj\Release\Left4Dead.csproj.CoreCompileInputs.cache
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\obj\Release\Left4Dead.exe
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\obj\Release\Left4Dead.pdb
-C:\Users\Kamil\Desktop\xdd\Left4Dead\Left4Dead\Left4Dead\obj\Release\Left4Dead.csprojAssemblyReference.cache
